@@ -173,7 +173,6 @@ async function getUserAlerts(guildId) {
 }
 
 main().catch(err => {
-    console.log('I am here!')
     console.error(err)
     process.exit()
 })
