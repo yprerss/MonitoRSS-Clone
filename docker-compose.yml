@@ -9,7 +9,7 @@ services:
     #   driver: none
   mrss-mongo:
     container_name: mrss-mongodb-container
-    restart: always
+    restart: on-failure:5
     command: mongod --port 27017
     # Comment below to show mongo logs
     # logging:
@@ -19,7 +19,7 @@ services:
       - 'db-data:/data/db'
   mrss-bot:
     container_name: mrss-bot-container
-    restart: always
+    restart: on-failure:3
     # The image can also be used
     # image: synzen/monitorss
     build: .
