@@ -7,7 +7,7 @@
   "main": "server.js",
   "scripts": {
     "migrate-v6": "node migrations/v6.js",
-    "start": "HOST=0.0.0.0 node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
